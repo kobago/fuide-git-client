@@ -9,8 +9,8 @@ license = "MIT"
 
 [workspace.dependencies]
 egui = "0.36.1"
-eframe = { version = "0.36.1", default-features = false, features = ["default_fonts", "wgpu"] }
-# The FUI kit lives in its own repo (private for now, so SSH). Pin with `rev` / `tag` for releases.
+eframe = { version = "0.36.1", default-features = false, features = ["default_fonts", "wgpu", "x11", "wayland"] }
+# The FUI kit lives in its own repo. Pin with `rev` / `tag` for releases.
 fuide = { git = "https://github.com/kobago/fuide" }
 
 # Developing the `fuide` crate alongside this app? Point Cargo at the sibling checkout
